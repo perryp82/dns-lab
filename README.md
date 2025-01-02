@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.imgur.com/fTIAX6A.png" alt="dns lab pic"/>
+</p>
+
 # Microsoft Azure DNS Lab Tutorial
 
 ## Introduction
@@ -7,7 +11,7 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
 
 ## Prerequisites
 - Access to **DC-1** and **Client-1** VMs.
-- Administrator credentials for the domain: `mydomain.com\jane_admin`.
+- Administrator credentials for the domain: `mydomain.com\jane_admin` (from AD lab).
 - Working knowledge of DNS records.
 
 ---
@@ -27,11 +31,19 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ```
       Observe that the ping fails.
 
+<p>
+<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
+
     - Run the following command to check for the DNS record:
       ```bash
       nslookup mainframe
       ```
       Observe that it fails (no DNS record exists).
+
+<p>
+<img src="https://i.imgur.com/1Jo2maG.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 4. **Create a DNS A-Record**:
     - Switch to **DC-1**.
