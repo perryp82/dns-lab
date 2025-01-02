@@ -11,7 +11,7 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
 
 ## Prerequisites
 - Access to **DC-1** and **Client-1** VMs.
-- Administrator credentials for the domain: `mydomain.com\jane_admin` (from AD lab).
+- Administrator credentials for the domain: `mydomain.com\jane_admin` (from the AD lab).
 - Working knowledge of DNS records.
 
 ---
@@ -35,11 +35,8 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
 <img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
 </p>
 
-    - Run the following command to check for the DNS record:
-      ```bash
-      nslookup mainframe
-      ```
-      Observe that it fails (no DNS record exists).
+Run the following command to check for the DNS record: 'nslookup mainframe'
+Observe that it fails (no DNS record exists).
 
 <p>
 <img src="https://i.imgur.com/1Jo2maG.png" height="80%" width="80%" alt="Lab 5"/>
@@ -131,7 +128,7 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       - Points to: `www.google.com`.
      
 <p>
-<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/CDzfQAm.png" height="80%" width="80%" alt="Lab 5"/>
 </p>
 
 2. **Test the CNAME Record**:
@@ -141,10 +138,6 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ```
       Observe the results of the CNAME record resolution.
 
-<p>
-<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
-</p>
-
 3. **Verify Using nslookup**:
     - On **Client-1**, run:
       ```bash
@@ -153,7 +146,7 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       Observe the results, ensuring the alias resolves to `www.google.com`.
 
 <p>
-<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/ufpwziw.png" height="80%" width="80%" alt="Lab 5"/>
 </p>
 
 ---
