@@ -50,6 +50,10 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
     - Open the **DNS Manager**.
     - Navigate to the appropriate forward lookup zone.
     - Add an **A-Record** for `mainframe` and point it to **DC-1's Private IP address**.
+  
+<p>
+<img src="https://i.imgur.com/MyHo9ld.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 5. **Verify Connectivity to "mainframe"**:
     - Go back to **Client-1**.
@@ -59,12 +63,20 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ```
       Observe that the ping is now successful.
 
+<p>
+<img src="https://i.imgur.com/VlbzsZN.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
+
 ---
 
 ## Local DNS Cache Exercise
 
 1. **Modify the A-Record**:
     - On **DC-1**, change the `mainframe` A-Record to point to `8.8.8.8`.
+  
+<p>
+<img src="https://i.imgur.com/2wUg8UM.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 2. **Ping "mainframe" from Client-1**:
     - On **Client-1**, run:
@@ -79,6 +91,10 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ipconfig /displaydns
       ```
       Observe the cached record for `mainframe`.
+
+<p>
+<img src="https://i.imgur.com/ri19Yl6.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 4. **Flush the DNS Cache**:
     - Clear the local DNS cache using:
@@ -99,6 +115,10 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ```
       Observe that it now resolves to the updated address (`8.8.8.8`).
 
+<p>
+<img src="https://i.imgur.com/lf9550j.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
+
 ---
 
 ## CNAME Record Exercise
@@ -109,6 +129,10 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
     - Add a **CNAME Record**:
       - Alias: `search`.
       - Points to: `www.google.com`.
+     
+<p>
+<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 2. **Test the CNAME Record**:
     - On **Client-1**, ping `search`:
@@ -117,12 +141,20 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       ```
       Observe the results of the CNAME record resolution.
 
+<p>
+<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
+
 3. **Verify Using nslookup**:
     - On **Client-1**, run:
       ```bash
       nslookup search
       ```
       Observe the results, ensuring the alias resolves to `www.google.com`.
+
+<p>
+<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+</p>
 
 ---
 
