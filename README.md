@@ -32,14 +32,14 @@ This lab focuses on DNS configuration and testing using A-Records, Local DNS Cac
       Observe that the ping fails.
 
 <p>
-<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/V9aQCZI.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 Run the following command to check for the DNS record: 'nslookup mainframe'
 Observe that it fails (no DNS record exists).
 
 <p>
-<img src="https://i.imgur.com/1Jo2maG.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/1Jo2maG.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 4. **Create a DNS A-Record**:
@@ -49,7 +49,7 @@ Observe that it fails (no DNS record exists).
     - Add an **A-Record** for `mainframe` and point it to **DC-1's Private IP address**.
   
 <p>
-<img src="https://i.imgur.com/MyHo9ld.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/MyHo9ld.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 5. **Verify Connectivity to "mainframe"**:
@@ -61,7 +61,7 @@ Observe that it fails (no DNS record exists).
       Observe that the ping is now successful.
 
 <p>
-<img src="https://i.imgur.com/VlbzsZN.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/VlbzsZN.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 ---
@@ -72,7 +72,7 @@ Observe that it fails (no DNS record exists).
     - On **DC-1**, change the `mainframe` A-Record to point to `8.8.8.8`.
   
 <p>
-<img src="https://i.imgur.com/2wUg8UM.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/2wUg8UM.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 2. **Ping "mainframe" from Client-1**:
@@ -90,7 +90,7 @@ Observe that it fails (no DNS record exists).
       Observe the cached record for `mainframe`.
 
 <p>
-<img src="https://i.imgur.com/ri19Yl6.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/ri19Yl6.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 4. **Flush the DNS Cache**:
@@ -113,7 +113,7 @@ Observe that it fails (no DNS record exists).
       Observe that it now resolves to the updated address (`8.8.8.8`).
 
 <p>
-<img src="https://i.imgur.com/lf9550j.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/lf9550j.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 ---
@@ -128,7 +128,7 @@ Observe that it fails (no DNS record exists).
       - Points to: `www.google.com`.
      
 <p>
-<img src="https://i.imgur.com/CDzfQAm.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/CDzfQAm.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 2. **Test the CNAME Record**:
@@ -146,7 +146,7 @@ Observe that it fails (no DNS record exists).
       Observe the results, ensuring the alias resolves to `www.google.com`.
 
 <p>
-<img src="https://i.imgur.com/ufpwziw.png" height="80%" width="80%" alt="Lab 5"/>
+<img src="https://i.imgur.com/ufpwziw.png" height="80%" width="80%" alt="Lab 6"/>
 </p>
 
 ---
