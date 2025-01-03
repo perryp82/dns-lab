@@ -152,6 +152,6 @@ Observe that it fails (no DNS record exists).
 ---
 
 ## Conclusion
-Congratulations! You have successfully completed the DNS exercises for A-Records, Local DNS Cache, and CNAME Records. Ensure all changes are documented and validated for your portfolio.
+Congratulations! You have successfully completed the DNS exercises for A-Records, Local DNS Cache, and CNAME Records.
 
 ---
